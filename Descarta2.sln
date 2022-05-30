@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Descarta2", "Descarta2\Descarta2.csproj", "{37397CE6-74F6-47F4-86CA-29ED73618BF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Descarta2.IntegrationTests", "Descarta2.IntegrationTests\Descarta2.IntegrationTests.csproj", "{10303482-43FC-416B-979C-BAB3510E1062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37397CE6-74F6-47F4-86CA-29ED73618BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37397CE6-74F6-47F4-86CA-29ED73618BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37397CE6-74F6-47F4-86CA-29ED73618BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37397CE6-74F6-47F4-86CA-29ED73618BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10303482-43FC-416B-979C-BAB3510E1062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10303482-43FC-416B-979C-BAB3510E1062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10303482-43FC-416B-979C-BAB3510E1062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10303482-43FC-416B-979C-BAB3510E1062}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {230C9279-2DCF-412A-927C-C7450EB7C7B8}
+	EndGlobalSection
+EndGlobal
