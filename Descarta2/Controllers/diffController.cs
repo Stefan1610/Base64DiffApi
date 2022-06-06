@@ -101,7 +101,7 @@ namespace Descarta2.Controllers
                 return StatusCode(200, diffResult);
             }catch (Exception e)
             {
-                return StatusCode(404, e.Message);
+                return StatusCode(404);
             }
             
           
