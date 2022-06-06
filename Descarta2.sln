@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Descarta2", "Descarta2\Descarta2.csproj", "{37397CE6-74F6-47F4-86CA-29ED73618BF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Descarta2.IntegrationTests", "Descarta2.IntegrationTests\Descarta2.IntegrationTests.csproj", "{10303482-43FC-416B-979C-BAB3510E1062}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Descarta2.IntegrationTests", "Descarta2.IntegrationTests\Descarta2.IntegrationTests.csproj", "{10303482-43FC-416B-979C-BAB3510E1062}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

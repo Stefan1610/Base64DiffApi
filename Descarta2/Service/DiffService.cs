@@ -107,7 +107,6 @@ namespace Descarta2.Service
                     Data = item.Data,
                     Position = (item.Position == "L" ? diffPosition.Left : diffPosition.Right)
                 };
-
                 return itemDto;
             }
         }

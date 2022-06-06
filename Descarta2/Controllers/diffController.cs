@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Descarta2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     [ApiController]
-    public class DiffControler : ControllerBase
+    public class diffController : ControllerBase
     {
         private readonly DiffService _service;
 
-        public DiffControler(DiffService JsonDiffService)
+        public diffController(DiffService JsonDiffService)
         {
             _service = JsonDiffService;
         }
@@ -91,19 +91,18 @@ namespace Descarta2.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DiffCheck(int id)
         {
-            if (id == null)
+            try
             {
-                return StatusCode(404);
-            }
-
-            
                 JsonDiffDTO diffResult = await _service.Compare(id);
-            if(diffResult.Diffs == null)
+                if (diffResult.Diffs == null)
+                {
+                    return StatusCode(200, new WithoutDiff { DiffResultType = diffResult.DiffResultType });
+                }
+                return StatusCode(200, diffResult);
+            }catch (Exception e)
             {
-                return StatusCode(200, new WithoutDiff {DiffResultType = diffResult.DiffResultType});
+                return StatusCode(404, e.Message);
             }
-                return StatusCode(200,diffResult);
-            
             
           
         }
